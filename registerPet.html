@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="./images/general/logo-paw.svg" type="image/x-icon" />
+      <link rel="stylesheet" href="./styles/index.css" />
+      <title>Buscando Amor</title>
+   </head>
+   <body>
+      <header class="header">
+         <div class="headerContent">
+            <img class="headerLogo" src="./images/general/logo.svg" alt="" />
+
+            <nav class="nav">
+               <a href="" class="navLink">Inicio</a>
+               <a href="" class="navLink">Nosotros</a>
+               <a href="" class="navLink">Contáctenos</a>
+            </nav>
+         </div>
+
+         <img src="./images/iconos/logout.svg" alt="" />
+      </header>
+
+      <article class="article formPet">
+         <section class="formPetAside clickable">
+            <div class="formPetPhotoContainer">
+               <img src="./images/iconos/plus.svg" alt="" />
+               <p class="white">Añade una imagen</p>
+            </div>
+         </section>
+
+         <form class="formPetContent">
+            <label>
+               Nombre
+               <input type="text" name="name" placeholder="Escribe el nombre de tu peludito" />
+            </label>
+
+            <label>
+               Elige la categoría
+               <div class="formPetRow">
+                  <button class="btn btnWhite">
+                     <img src="./images/iconos/dog.svg" alt="" />
+                  </button>
+                  <button class="btn btnWhite">
+                     <img src="./images/iconos/cat.svg" alt="" />
+                  </button>
+               </div>
+            </label>
+
+            <label>
+               Raza
+               <input type="text" name="breed" placeholder="Escribre la raza" />
+            </label>
+
+            <div class="formPetRow">
+               <label class="first">
+                  Edad
+                  <input type="number" name="age" />
+               </label>
+
+               <label class="second">
+                  color
+                  <input type="text" name="color" />
+               </label>
+
+               <label class="third">
+                  Sexo
+                  <select name="sex">
+                     <option value="male">Masculino</option>
+                     <option value="female">Femenino</option>
+                  </select>
+               </label>
+            </div>
+
+            <label>
+               Descripción
+               <textarea name="dscription" rows="2"></textarea>
+            </label>
+
+            <button class="btn formPetBtn">Publicar</button>
+         </form>
+      </article>
+   </body>
+</html>

@@ -8,6 +8,10 @@
    box-sizing: border-box;
 }
 
+.clickable {
+   cursor: pointer;
+}
+
 .white {
    color: white;
 }
@@ -50,6 +54,8 @@ label {
 }
 
 input,
+textarea,
+select,
 .requestViewContentInfo {
    border: none;
    outline: none;
@@ -303,14 +309,16 @@ input::placeholder {
    gap: 20px 40px;
 }
 
-.requestView {
+.requestView,
+.formPet {
    height: calc(100vh - 100px);
    padding-bottom: 0px !important;
    flex-direction: row;
    gap: 0;
 }
 
-.requestViewAside {
+.requestViewAside,
+.formPetAside {
    width: 45%;
    display: flex;
    flex-direction: column;
@@ -320,7 +328,8 @@ input::placeholder {
    overflow: hidden;
 }
 
-.requestViewPhotoContainer {
+.requestViewPhotoContainer,
+.formPetPhotoContainer {
    width: 100%;
    height: 100%;
    padding: 48px;
@@ -333,13 +342,15 @@ input::placeholder {
    background-color: #f9b5b5;
 }
 
-.requestViewPhoto {
+.requestViewPhoto,
+.formPetPhoto {
    width: 100%;
    height: 100%;
    object-fit: contain;
 }
 
-.requestViewContent {
+.requestViewContent,
+.formPetContent {
    width: 55%;
    padding-left: 80px;
 
@@ -357,6 +368,36 @@ input::placeholder {
    margin-top: 20px;
 }
 
+.formPetPhotoContainer {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+}
+
+.formPetRow {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.formPetRow .btn,
+.formPetRow .second {
+   width: calc(50% - 10px);
+}
+
+.formPetRow .first {
+   width: calc(15% - 10px);
+}
+
+.formPetRow .third {
+   width: calc(35% - 10px);
+}
+
+.formPetBtn {
+   align-self: flex-end;
+}
+
 @media (max-width: 1450px) {
    .landing {
       padding-left: 64px;
@@ -369,7 +410,8 @@ input::placeholder {
       padding: 60px 80px;
    }
 
-   .requestView {
+   .requestView,
+   .formPet {
       padding-top: 40px !important;
    }
 }
