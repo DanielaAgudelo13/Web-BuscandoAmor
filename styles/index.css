@@ -1,5 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap');
 
 /* general */
 * {
@@ -7,8 +8,56 @@
    box-sizing: border-box;
 }
 
-body {
+.white {
+   color: white;
+}
+
+h1 {
+   font-family: 'Nunito', sans-serif;
+   font-size: 36px;
+   line-height: 42px;
+}
+
+h1.big {
+   font-size: 64px;
+   line-height: 74px;
+}
+
+p {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   line-height: 22px;
+}
+
+p.big {
+   font-size: 24px;
+   line-height: 28px;
+}
+
+.btn {
+   width: fit-content;
+   outline: none;
+   border: none;
+   border-radius: 9px;
+
+   color: white;
    background-color: #6727af;
+   padding: 12px 68px;
+
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 22px;
+}
+
+.btnLanding {
+   color: #3f3f3f;
+   background-color: #fbc400;
+}
+
+.bodyHome {
+   background-color: #6727af;
+   background-image: url('../images/general/paw-pattern.svg');
 }
 
 /* header */
@@ -43,4 +92,59 @@ body {
    text-decoration: none;
 
    color: white;
+}
+
+/* home */
+.landing {
+   width: 100%;
+   height: calc(100vh - 100px);
+   padding: 64px;
+   padding-left: 180px;
+
+   display: flex;
+   align-items: center;
+   gap: 120px;
+
+   position: relative;
+}
+
+.landingAside {
+   width: fit-content;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.landingAside p {
+   font-family: 'Raleway', sans-serif;
+   font-size: 14px;
+   line-height: 16px;
+
+   color: white;
+
+   writing-mode: vertical-lr;
+   transform: rotate(180deg);
+}
+
+.landingContent {
+   max-width: 540px;
+   display: flex;
+   flex-direction: column;
+   gap: 54px;
+}
+
+.landingPhoto {
+   height: 100%;
+   position: absolute;
+   right: 10%;
+   bottom: 0;
+}
+
+@media (max-width: 1450px) {
+   .landing {
+      padding-left: 64px;
+   }
+   .landingPhoto {
+      right: 0;
+   }
 }
