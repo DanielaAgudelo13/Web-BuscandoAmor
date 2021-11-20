@@ -14,8 +14,10 @@
 
 h1 {
    font-family: 'Nunito', sans-serif;
+   font-weight: bold;
    font-size: 36px;
    line-height: 42px;
+   color: #3f3f3f;
 }
 
 h1.big {
@@ -27,11 +29,44 @@ p {
    font-family: 'Raleway', sans-serif;
    font-size: 18px;
    line-height: 22px;
+   color: #3f3f3f;
 }
 
 p.big {
    font-size: 24px;
    line-height: 28px;
+}
+
+label {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+
+   font-family: 'Raleway', sans-serif;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   color: #3f3f3f;
+}
+
+input {
+   border: none;
+   outline: none;
+
+   width: 100%;
+   padding: 18px;
+   background: #ffffff;
+   box-shadow: 0px 0px 6px rgba(147, 147, 147, 0.25);
+   border-radius: 9px;
+
+   font-family: 'Raleway', sans-serif;
+   font-size: 14px;
+   line-height: 16px;
+   color: #3f3f3f;
+}
+
+input::placeholder {
+   color: #c8c8c8;
 }
 
 .btn {
@@ -44,7 +79,7 @@ p.big {
    background-color: #6727af;
    padding: 12px 68px;
 
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Nunito', sans-serif;
    font-weight: bold;
    font-size: 18px;
    line-height: 22px;
@@ -53,6 +88,10 @@ p.big {
 .btnLanding {
    color: #3f3f3f;
    background-color: #fbc400;
+}
+
+.btnFullSize {
+   width: 100%;
 }
 
 .bodyHome {
@@ -64,13 +103,17 @@ p.big {
 .header {
    width: 100%;
    height: 100px;
-   background-color: transparent;
+   background-color: #6727af;
    box-shadow: 0px 0px 6px #35135a;
 
    display: flex;
    align-items: center;
    justify-content: space-between;
    padding: 20px 64px;
+}
+
+.headerLanding {
+   background-color: transparent;
 }
 
 .headerContent {
@@ -138,6 +181,48 @@ p.big {
    position: absolute;
    right: 10%;
    bottom: 0;
+}
+
+/* auth */
+.auth {
+   width: 100%;
+   height: calc(100vh - 100px);
+
+   display: flex;
+}
+
+.authText {
+   width: 55%;
+   padding: 0px 140px;
+   background-image: url(../images/photos/catBg.png);
+   background-position: center center;
+   background-size: cover;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 16px;
+}
+
+.authForm {
+   width: 45%;
+   height: 100%;
+   padding: 0px 68px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 48px;
+}
+
+.authFormInputs {
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
 }
 
 @media (max-width: 1450px) {
