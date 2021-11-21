@@ -107,9 +107,17 @@ input::placeholder {
    width: 100%;
 }
 
+.btnCardPet {
+   height: 100%;
+   padding: 10px;
+
+   border-radius: 0px 20px 20px 0px;
+}
+
 .card {
    width: calc(50% - 20px);
    height: 136px;
+   position: relative;
 
    background: #ffffff;
    box-shadow: 0px 0px 6px rgba(147, 147, 147, 0.25);
@@ -158,6 +166,20 @@ input::placeholder {
 .cardContent p {
    font-size: 12px;
    line-height: 14px;
+}
+
+.cardPetLeft {
+   height: 100%;
+   position: absolute;
+   right: 0;
+
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+}
+
+.cardPetLeftGender {
+   padding-top: 15px;
 }
 
 .bodyHome {
