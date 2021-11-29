@@ -8,6 +8,10 @@
    box-sizing: border-box;
 }
 
+.hidden {
+   display: none !important;
+}
+
 .clickable {
    cursor: pointer;
 }
@@ -42,6 +46,7 @@ p.big {
 }
 
 label {
+   width: 100%;
    display: flex;
    flex-direction: column;
    gap: 8px;
@@ -238,6 +243,10 @@ input::placeholder {
    color: white;
 }
 
+.navLinkActive {
+   border-bottom: 2px solid currentColor;
+}
+
 /* landing */
 .landing {
    width: 100%;
@@ -287,7 +296,7 @@ input::placeholder {
 /* auth */
 .auth {
    width: 100%;
-   height: calc(100vh - 100px);
+   height: 100vh;
 
    display: flex;
 }
@@ -366,7 +375,8 @@ input::placeholder {
 }
 
 .requestViewPhotoContainer,
-.formPetPhotoContainer {
+.formPetPhotoContainer,
+.formUploadPhoto {
    width: 100%;
    height: 100%;
    padding: 48px;
@@ -405,7 +415,8 @@ input::placeholder {
    margin-top: 20px;
 }
 
-.formPetPhotoContainer {
+.formPetPhotoContainer,
+.formUploadPhoto {
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -419,7 +430,8 @@ input::placeholder {
 }
 
 .formPetRow .btn,
-.formPetRow .second {
+.formPetRow .second,
+.formPetRow label {
    width: calc(50% - 10px);
 }
 

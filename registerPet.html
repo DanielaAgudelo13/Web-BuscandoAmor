@@ -14,9 +14,9 @@
             <img class="headerLogo" src="./images/general/logo.svg" alt="" />
 
             <nav class="nav">
-               <a href="" class="navLink">Inicio</a>
-               <a href="" class="navLink">Nosotros</a>
-               <a href="" class="navLink">Contáctenos</a>
+               <a href="./home.html" class="navLink">Solicitudes</a>
+               <a href="./petList.html" class="navLink navLinkActive">Registro Animal</a>
+               <a href="./adoptionsList.html" class="navLink">Adopciones realizadas</a>
             </nav>
          </div>
 
@@ -29,6 +29,14 @@
                <img src="./images/iconos/plus.svg" alt="" />
                <p class="white">Añade una imagen</p>
             </div>
+
+            <form class="formUploadPhoto hidden">
+               <label>
+                  url de la imagen
+                  <input name="url" />
+               </label>
+               <button class="btn">Cargar</button>
+            </form>
          </section>
 
          <form class="formPetContent">
@@ -40,19 +48,26 @@
             <label>
                Elige la categoría
                <div class="formPetRow">
-                  <button class="btn btnWhite">
+                  <button type="button" class="btn btnWhite btnDog">
                      <img src="./images/iconos/dog.svg" alt="" />
                   </button>
-                  <button class="btn btnWhite">
+                  <button type="button" class="btn btnWhite btnCat">
                      <img src="./images/iconos/cat.svg" alt="" />
                   </button>
                </div>
             </label>
 
-            <label>
-               Raza
-               <input type="text" name="breed" placeholder="Escribre la raza" />
-            </label>
+            <div class="formPetRow">
+               <label>
+                  Raza
+                  <input type="text" name="breed" placeholder="Escribre la raza" />
+               </label>
+
+               <label>
+                  Características
+                  <input type="text" name="charaterics" placeholder="Escribre las características" />
+               </label>
+            </div>
 
             <div class="formPetRow">
                <label class="first">
@@ -76,11 +91,17 @@
 
             <label>
                Descripción
-               <textarea name="dscription" rows="2"></textarea>
+               <textarea name="description" rows="1"></textarea>
             </label>
 
             <button class="btn formPetBtn">Publicar</button>
          </form>
       </article>
    </body>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+   <script src="./js/firebase.js"></script>
+   <script src="./js/registerPet.js"></script>
 </html>
