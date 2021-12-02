@@ -19,7 +19,7 @@ class CardPet {
             </div>
 
             <div>
-               <p>${this.pet.age} años</p>
+               <p>${this.pet.age}</p>
                <p>${this.pet.characteristic}</p>
             </div>
          </div>

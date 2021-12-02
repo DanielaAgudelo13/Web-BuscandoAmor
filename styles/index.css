@@ -430,13 +430,16 @@ input::placeholder {
 }
 
 .formPetRow .btn,
-.formPetRow .second,
 .formPetRow label {
    width: calc(50% - 10px);
 }
 
 .formPetRow .first {
-   width: calc(15% - 10px);
+   width: calc(20% - 10px);
+}
+
+.formPetRow .second {
+   width: calc(45% - 10px);
 }
 
 .formPetRow .third {
