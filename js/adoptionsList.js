@@ -1,9 +1,9 @@
 const adoptionsContainer = document.querySelector('.adoptionsContainer');
 
 var today = new Date();
-var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
-console.log(date);
+var todayM = moment();
+const sevenDaysBefore = moment().subtract(7, 'days');
 
 let filterValue = undefined;
 
@@ -67,6 +67,21 @@ const getAdoptionData = () => {
                               adoptionInfo.date.date === today.getDate() &&
                               adoptionInfo.date.month === today.getMonth()
                            ) {
+                              renderAdoptions(petInfo);
+                           }
+
+                           break;
+
+                        case 'week':
+                           let dateApi = moment().set({
+                              year: 2021,
+                              month: adoptionInfo.date.month,
+                              day: adoptionInfo.date.date,
+                           });
+
+                           console.log(dateApi.isBetween(sevenDaysBefore, today, 'day', '[]'));
+
+                           if (dateApi.isBetween(sevenDaysBefore, today, 'day', '[]')) {
                               renderAdoptions(petInfo);
                            }
 
