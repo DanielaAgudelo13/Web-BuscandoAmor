@@ -10,11 +10,11 @@ const renderPets = (snapshot) => {
    snapshot.forEach((data) => {
       let petInfo = data.val();
 
+      console.log(petInfo);
+
       let cardPet = new CardPet(petInfo);
 
       petListContainer.appendChild(cardPet.render());
-
-      console.log(petInfo);
    });
 };
 
