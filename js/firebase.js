@@ -17,3 +17,12 @@ const user = firebase.auth().currentUser;
 const usersRef = db.ref('Users');
 const petsRef = db.ref('Pets');
 const adoptionRequest = db.ref('AdoptionRequest');
+
+const btnLogout = document.querySelector('.btnLogout');
+
+btnLogout.addEventListener('click', () => {
+   console.log('salio');
+   auth.signOut().then(() => {
+      window.location.href = 'index.html';
+   });
+});
