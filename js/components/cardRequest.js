@@ -25,13 +25,13 @@ class CardRequest {
                <p><b>Solicitada la adopción:</b>${
                   this.request.date.day + '/' + this.request.date.month + '/' + this.request.date.year
                }</p>
-               <p><b>Estado:</b> En proceso...</p>
+               <p><b>Estado:</b> ${this.request.status}</p>
             </div>
          </div>
       `;
 
       cardRequest.onclick = () => {
-         window.location.href = `./requestView.html?id=${this.request.id}&=${this.request.name}&=${this.pet.name}`;
+         window.location.href = `./requestView.html?requestId=${this.request.id}&userName=${this.request.name}`;
       };
 
       return cardRequest;

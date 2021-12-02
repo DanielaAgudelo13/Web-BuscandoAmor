@@ -13,7 +13,7 @@ const renderRequest = (snapshot) => {
       let requests = Object.values(userRequests);
 
       requests.forEach((requestInfo) => {
-         if (requestInfo.status == 'waiting') {
+         if (requestInfo.status == 'en espera') {
             petsRef
                .child(requestInfo.petId)
                .get()

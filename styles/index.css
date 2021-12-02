@@ -460,9 +460,6 @@ input::placeholder {
    gap: 16px;
 }
 
-.adoptionsContainer {
-}
-
 @media (max-width: 1450px) {
    .landing {
       padding-left: 64px;

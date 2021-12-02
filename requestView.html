@@ -28,29 +28,29 @@
             <img src="./images/iconos/back.svg" alt="" />
 
             <div class="requestViewPhotoContainer">
-               <img class="requestViewPhoto" src="./images/photos/homeDog2.png" alt="" />
+               <img class="requestViewPhoto requestViewImg" src="./images/photos/homeDog2.png" alt="" />
             </div>
          </section>
 
          <section class="requestViewContent">
             <label>
                Nombre
-               <div class="requestViewContentInfo">Laura Camila Cobo</div>
+               <div class="requestViewContentInfo requestViewName">Laura Camila Cobo</div>
             </label>
 
             <label>
                Email
-               <div class="requestViewContentInfo">lauracamilacobo@gmail.com</div>
+               <div class="requestViewContentInfo requestViewEmail">lauracamilacobo@gmail.com</div>
             </label>
 
             <label>
                Dirección
-               <div class="requestViewContentInfo">Cra. 31 # 10-10 / Barrio Alcazares</div>
+               <div class="requestViewContentInfo requestViewAddress">Cra. 31 # 10-10 / Barrio Alcazares</div>
             </label>
 
             <label>
                Motivo de adopción
-               <div class="requestViewContentInfo">
+               <div class="requestViewContentInfo requestViewReason">
                   Hace unos meses mi madre murio y por esto me he sentido muy sola, necesito de la compañia de alguien
                   que su amor sea incondicional para toda la vida, asi que por este motivo me he decidido a adoptar una
                   moscata, y Pug me enamoro desde el primer momento en que lo vi.
@@ -58,10 +58,17 @@
             </label>
 
             <div class="requestViewContentBtns">
-               <button class="btn btnWhite">Confirmar</button>
-               <button class="btn btnWhite">Rechazar</button>
+               <button class="btn btnWhite btnRequestAccept">Confirmar</button>
+               <button class="btn btnWhite btnRequestAccept">Rechazar</button>
             </div>
          </section>
       </article>
    </body>
+
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+   <script src="./js/firebase.js"></script>
+
+   <script src="./js/requestView.js"></script>
 </html>
