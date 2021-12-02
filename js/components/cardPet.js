@@ -8,7 +8,7 @@ class CardPet {
       cardPet.className = 'card cardPet';
 
       cardPet.innerHTML = `
-         <div class="cardImgContainer">
+         <div class="cardImgContainer ${this.pet.type == 'dog' ? 'cardImgContainerPurple' : ''}">
             <img class="cardImg" src="${this.pet.img}" alt="" />
          </div>
 

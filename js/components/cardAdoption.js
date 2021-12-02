@@ -9,7 +9,7 @@ class CardAdoption {
       cardAdoption.className = 'card cardAccepted';
 
       cardAdoption.innerHTML = `
-         <div class="cardImgContainer">
+         <div class="cardImgContainer ${this.pet.type == 'dog' ? 'cardImgContainerPurple' : ''}">
             <img class="cardImg" src="${this.pet.img}" alt="" />
          </div>
 

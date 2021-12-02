@@ -11,7 +11,7 @@ class CardRequest {
       console.log(this.request.date);
 
       cardRequest.innerHTML = `
-         <div class="cardImgContainer">
+         <div class="cardImgContainer ${this.pet.type == 'dog' ? 'cardImgContainerPurple' : ''}">
             <img class="cardImg" src="${this.pet.img}" alt="" />
          </div>
 
@@ -25,7 +25,7 @@ class CardRequest {
                <p><b>Solicitada la adopción:</b>${
                   this.request.date.day + '/' + this.request.date.month + '/' + this.request.date.year
                }</p>
-               <p><b>Estado:</b> ${this.request.status}</p>
+               <p><b>Estado:</b>  ${this.request.status}</p>
             </div>
          </div>
       `;
