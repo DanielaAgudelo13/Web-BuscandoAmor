@@ -48,7 +48,7 @@ document.querySelector('.btnRequestAccept').onclick = () => {
    window.location.href = './home.html';
 };
 
-document.querySelector('.btnRequestAccept').onclick = () => {
+document.querySelector('.btnRequestRefuse').onclick = () => {
    db.ref('AdoptionRequest/' + userId + '/' + requestId + '/status').set('rechazado');
    window.location.href = './home.html';
 };
