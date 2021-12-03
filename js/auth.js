@@ -36,3 +36,10 @@ form.addEventListener('submit', (e) => {
          });
    }
 });
+
+auth.onAuthStateChanged((user) => {
+   console.log(user);
+   if (user != null) {
+      window.location.href = './home.html';
+   }
+});
