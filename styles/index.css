@@ -154,7 +154,7 @@ input::placeholder {
 }
 
 .cardImgContainerPurple {
-   background-color: #bfb5f9;
+   background-color: #bfb5f9 !important;
 }
 
 .cardImg {
@@ -485,7 +485,11 @@ input::placeholder {
    }
 }
 
-/* loading animation*/
+/* 
+loading animation
+
+https://loading.io/css/
+*/
 
 .lds-spinner {
    color: official;

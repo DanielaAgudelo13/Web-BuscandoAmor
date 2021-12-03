@@ -35,6 +35,11 @@ const requestView = document.querySelector('.requestView');
 const renderRequestView = (request, pet) => {
    console.log(pet);
 
+   if (pet.type === 'dog') {
+      console.log('entra');
+      requestView.querySelector('.requestViewPhotoContainer').classList.add('cardImgContainerPurple');
+   }
+
    requestView.querySelector('.requestViewImg').src = pet.img;
 
    requestView.querySelector('.requestViewName').innerHTML = request.name;
