@@ -49,7 +49,7 @@ const renderRequestView = (request, pet) => {
 };
 
 document.querySelector('.btnRequestAccept').onclick = () => {
-   db.ref('AdoptionRequest/' + userId + '/' + requestId + '/status').set('aprobado ');
+   db.ref('AdoptionRequest/' + userId + '/' + requestId + '/status').set('aprobado');
    window.location.href = './home.html';
 };
 
