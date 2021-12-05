@@ -1,10 +1,12 @@
 const firebaseConfig = {
-   apiKey: 'AIzaSyBQxrfmK7modt2IKugys4AnF_pM8KpI3pw',
-   authDomain: 'buscando-amor-15a00.firebaseapp.com',
-   projectId: 'buscando-amor-15a00',
-   storageBucket: 'buscando-amor-15a00.appspot.com',
-   messagingSenderId: '1091939386420',
-   appId: '1:1091939386420:web:3f67448cd789469d9df661',
+   apiKey: "AIzaSyBMM0rbmnwI0TqkqgZUAT28H0LFG1A-7No",
+   authDomain: "buscandoamor-15a6c.firebaseapp.com",
+   databaseURL: "https://buscandoamor-15a6c-default-rtdb.firebaseio.com",
+   projectId: "buscandoamor-15a6c",
+   storageBucket: "buscandoamor-15a6c.appspot.com",
+   messagingSenderId: "59226766385",
+   appId: "1:59226766385:web:6c80175ef94b491d272910"
+
 };
 
 firebase.initializeApp(firebaseConfig);
