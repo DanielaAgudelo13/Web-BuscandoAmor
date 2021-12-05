@@ -10,8 +10,8 @@ let imgUrl;
 btnCat.onclick = () => {
    type = 'cat';
 
-   btnCat.querySelector('img').src = '../images/iconos/catWhite.svg';
-   btnDog.querySelector('img').src = '../images/iconos/dog.svg';
+   btnCat.querySelector('img').src = './images/iconos/catWhite.svg';
+   btnDog.querySelector('img').src = './images/iconos/dog.svg';
 
    btnCat.classList.remove('btnWhite');
    btnDog.classList.add('btnWhite');
@@ -20,8 +20,8 @@ btnCat.onclick = () => {
 btnDog.onclick = () => {
    type = 'dog';
 
-   btnDog.querySelector('img').src = '../images/iconos/dogWhite.svg';
-   btnCat.querySelector('img').src = '../images/iconos/cat.svg';
+   btnDog.querySelector('img').src = './images/iconos/dogWhite.svg';
+   btnCat.querySelector('img').src = './images/iconos/cat.svg';
 
    btnDog.classList.remove('btnWhite');
    btnCat.classList.add('btnWhite');
